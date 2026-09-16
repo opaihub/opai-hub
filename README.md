@@ -1,26 +1,12 @@
 # BRcode
 
-O repositório `opai-hub` agora está sendo usado como base do **BRcode**, um aplicativo de comunidades, chat, voz e vídeo com identidade visual preta e verde neon.
+Projeto oficial do BRcode — plataforma de comunicação com chat, voz, vídeo, comunidades, amigos, bots, arquivos e moderação.
 
-## Estado atual
+## Identidade
+- Nome: BRcode
+- Interface: preto + verde neon
+- Android: projeto nativo em `android/`
+- Web: PWA em `index.html`
 
-- Login e cadastro local de demonstração.
-- Sessão persistida no navegador com `localStorage`.
-- Tela inicial do BRcode após login.
-- Interface responsiva para celular e PC.
-- Identidade visual BRcode.
-
-## Login de demonstração
-
-Usuário: `Caua_`  
-Senha: `123456`
-
-## Próximas etapas
-
-- Backend e autenticação segura.
-- Banco de dados.
-- Comunidades e canais.
-- Chat em tempo real.
-- Mensagens privadas e amigos.
-- Voz e vídeo com WebRTC.
-- Bots, permissões e moderação.
+## Status
+MVP inicial do aplicativo. As integrações de backend, chat em tempo real, WebRTC, notificações e bots serão adicionadas nas próximas versões.
