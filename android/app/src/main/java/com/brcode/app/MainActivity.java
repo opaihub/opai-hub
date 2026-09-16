@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.*;
 
 public class MainActivity extends Activity {
@@ -30,5 +29,5 @@ public class MainActivity extends Activity {
         enter.setOnClickListener(v->{String u=user.getText().toString().trim(), p=pass.getText().toString(); if(u.isEmpty()||p.isEmpty()){message.setText("Preencha usuário e senha.");return;} if(p.length()<6){message.setText("A senha precisa ter pelo menos 6 caracteres.");return;} if(register){prefs.edit().putString("user",u).putString("pass",p).apply(); showHome(u);return;} String su=prefs.getString("user",""),sp=prefs.getString("pass",""); if((u.equalsIgnoreCase("Caua_")&&p.equals("123456"))||(u.equalsIgnoreCase(su)&&p.equals(sp))) showHome(u); else message.setText("Usuário ou senha inválidos.");});
     }
     void showHome(String name){ base(); TextView logo=text("⚡ BRcode",34,Color.WHITE); logo.setTypeface(null,1); root.addView(logo); TextView online=text("● Online",15,GREEN); root.addView(online); TextView welcome=text("Bem-vindo, "+name+"! 👋",28,Color.WHITE); welcome.setTypeface(null,1); welcome.setPadding(0,35,0,12); root.addView(welcome); TextView desc=text("Seu espaço para conversar, jogar e criar comunidades.",16,MUTED); desc.setPadding(10,0,10,30); root.addView(desc);
-        String[] features={"💬  Chat","🎙️  Voz","👥  Comunidades","🤖  Bots"}; for(String f:features){TextView t=text(f,18,Color.WHITE); t.setGravity(Gravity.LEFT|Gravity.CENTER_VERTICAL); t.setPadding(20,0,0,0); t.setBackground(bg(PANEL,18)); LinearLayout.LayoutParams p=new LinearLayout.LayoutParams(-1,62);p.setMargins(0,6,0,6);root.addView(t,p);} Button out=button("Sair da conta"); LinearLayout.LayoutParams op=new LinearLayout.LayoutParams(-1,58);op.setMargins(0,25,0,0);root.addView(out,op); out.setOnClickListener(v=>{prefs.edit().clear().apply();showLogin();}); }
+        String[] features={"💬  Chat","🎙️  Voz","👥  Comunidades","🤖  Bots"}; for(String f:features){TextView t=text(f,18,Color.WHITE); t.setGravity(Gravity.LEFT|Gravity.CENTER_VERTICAL); t.setPadding(20,0,0,0); t.setBackground(bg(PANEL,18)); LinearLayout.LayoutParams p=new LinearLayout.LayoutParams(-1,62);p.setMargins(0,6,0,6);root.addView(t,p);} Button out=button("Sair da conta"); LinearLayout.LayoutParams op=new LinearLayout.LayoutParams(-1,58);op.setMargins(0,25,0,0);root.addView(out,op); out.setOnClickListener(v->{prefs.edit().clear().apply();showLogin();}); }
 }
