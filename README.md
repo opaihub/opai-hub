@@ -1,19 +1,26 @@
-# OPAI HUB ZERO V4
+# BRcode
 
-## Login
-- Administrador: `admin / cauhub123`
-- Cadastro local de contas de demonstração disponível na tela de entrada.
+O repositório `opai-hub` agora está sendo usado como base do **BRcode**, um aplicativo de comunidades, chat, voz e vídeo com identidade visual preta e verde neon.
 
-## Novidades desta versão
-- Catálogo de anime atualizado automaticamente pela Jikan API usando a temporada atual e Top Airing.
-- Botão de atualização manual do catálogo.
-- Página de detalhes com abas funcionais: Episódios, Detalhes, Temporadas, Elenco e Avaliações.
-- Avaliações e elenco puxados sob demanda para títulos com `mal_id`.
-- Temporadas clicáveis.
-- Personalização de cor principal, secundária e fundo, com presets.
-- Configurações de qualidade, autoplay e redução de animações.
-- Progresso e marcação automática de episódios mantidos.
-- Player somente com URLs HTTPS configuradas como fontes autorizadas.
+## Estado atual
 
-## Observação
-A API fornece **informações públicas** de catálogo. Ela não fornece vídeos para reprodução. O player aceita somente fontes/embeds que o administrador tenha autorização para usar.
+- Login e cadastro local de demonstração.
+- Sessão persistida no navegador com `localStorage`.
+- Tela inicial do BRcode após login.
+- Interface responsiva para celular e PC.
+- Identidade visual BRcode.
+
+## Login de demonstração
+
+Usuário: `Caua_`  
+Senha: `123456`
+
+## Próximas etapas
+
+- Backend e autenticação segura.
+- Banco de dados.
+- Comunidades e canais.
+- Chat em tempo real.
+- Mensagens privadas e amigos.
+- Voz e vídeo com WebRTC.
+- Bots, permissões e moderação.
